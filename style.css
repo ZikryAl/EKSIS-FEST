@@ -1,0 +1,236 @@
+/* style.css */
+
+/* --- GENERAL STYLES --- */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif; /* Font modern dan bersih */
+    margin: 0;
+    line-height: 1.7;
+    color: #E0E0E0; /* Warna teks terang */
+    background: linear-gradient(135deg, #1a0f3d, #2a0a4a); /* Gradien latar belakang ungu gelap */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Konten dimulai dari atas */
+    padding: 30px 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1000px;
+    width: 95%; /* Responsif */
+    margin: auto;
+    padding: 30px;
+    background: rgba(10, 10, 30, 0.9); /* Latar belakang semi-transparan gelap */
+    border-radius: 20px; /* Sudut membulat */
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2), 0 0 60px rgba(128, 0, 128, 0.4); /* Efek glow neon */
+    border: 1px solid rgba(0, 255, 255, 0.3); /* Border tipis neon */
+    backdrop-filter: blur(5px); /* Efek blur ringan */
+}
+
+/* --- HEADER --- */
+header {
+    text-align: center;
+    padding: 40px 0;
+    background: linear-gradient(45deg, #8A2BE2, #FF1493); /* Gradien ungu-pink */
+    color: white;
+    border-bottom-left-radius: 80px; /* Bentuk yang lebih dinamis */
+    border-bottom-right-radius: 80px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 20px rgba(138, 43, 226, 0.4);
+}
+
+header img {
+    max-width: 280px; /* Ukuran logo lebih besar */
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 15px; /* Sedikit membulat */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+header h1 {
+    font-size: 3.5em; /* Ukuran judul lebih besar */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px; /* Jarak antar huruf */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 100, 200, 0.5); /* Efek glow teks */
+}
+
+header p {
+    font-size: 1.3em;
+    margin-top: 0;
+    font-weight: 300; /* Tipis */
+    opacity: 0.9;
+}
+
+/* --- SECTION HEADINGS --- */
+h2 {
+    text-align: center;
+    color: #00FFFF; /* Cyan neon */
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #00FFFF, #FF00FF); /* Gradien di bawah judul */
+    margin: 15px auto 0;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+h3 {
+    color: #00FF00; /* Hijau neon */
+    margin-top: 35px;
+    border-left: 6px solid #FF00FF; /* Border pink neon */
+    padding-left: 15px;
+    font-size: 1.6em;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.4);
+}
+
+/* --- GENERAL CONTENT --- */
+section {
+    margin-bottom: 40px;
+    padding: 30px;
+    border: 1px solid rgba(0, 255, 255, 0.1); /* Border tipis neon */
+    border-radius: 15px;
+    background: rgba(10, 10, 30, 0.7); /* Latar belakang section lebih terang */
+    box-shadow: 0 5px 20px rgba(0, 255, 255, 0.15);
+}
+
+p {
+    margin-bottom: 15px;
+    color: #D0D0D0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 12px;
+    padding-left: 30px;
+    position: relative;
+    color: #C0C0C0;
+}
+
+ul li::before {
+    content: '🚀'; /* Simbol lebih futuristik */
+    position: absolute;
+    left: 0;
+    color: #FF00FF; /* Pink neon */
+    font-size: 1.2em;
+    top: -2px;
+}
+
+/* --- BUTTONS --- */
+.button {
+    display: inline-block;
+    background: linear-gradient(45deg, #28a745, #5cb85c); /* Gradien hijau WhatsApp */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    margin: 15px 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(40, 167, 69, 0.4);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    letter-spacing: 0.5px;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: linear-gradient(45deg, #218838, #4cae4c);
+    transform: translateY(-3px) scale(1.02); /* Efek melayang dan sedikit membesar */
+    box-shadow: 0 8px 20px rgba(40, 167, 69, 0.6);
+}
+
+/* --- PROGRESS SECTION --- */
+.progress-section {
+    background: rgba(20, 20, 45, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 40px;
+    border: 1px solid rgba(128, 0, 128, 0.2);
+    box-shadow: 0 0 25px rgba(128, 0, 128, 0.4);
+}
+
+.game-progress {
+    margin-bottom: 25px;
+    background: rgba(30, 30, 60, 0.7);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 255, 255, 0.15);
+    box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.1); /* Inner shadow */
+}
+
+.game-progress h4 {
+    margin-bottom: 8px;
+    color: #FFEA00; /* Kuning neon */
+    font-size: 1.3em;
+    text-shadow: 0 0 5px rgba(255, 234, 0, 0.5);
+}
+
+.progress-bar-container {
+    background-color: rgba(50, 50, 70, 0.7);
+    border-radius: 15px;
+    overflow: hidden;
+    height: 30px; /* Lebih tinggi */
+    margin-top: 10px;
+    position: relative;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #00FFFF, #FF00FF); /* Gradien futuristik */
+    width: 0%;
+    transition: width 0.8s ease-out; /* Animasi lebih halus */
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+.progress-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 30px; /* Sesuai tinggi bar */
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5), 0 0 10px rgba(255,255,255,0.3);
+    font-size: 1.1em;
+}
+
+/* --- FOOTER --- */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9em;
+    color: #A0A0A0;
+    background: linear-gradient(90deg, #200020, #400040); /* Gradien gelap di footer */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-top: 50px;
+    box-shadow: 0 -5px 20px rgba(128, 0, 128, 0.3);
+}
+
+/* --- UTILITY CLASSES --- */
+.text-center {
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-top: 1px dashed rgba(0, 255, 255, 0.3); /* Garis pemisah putus-putus neon */
+    margin: 40px 0;
+}
